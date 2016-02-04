@@ -9,7 +9,9 @@
   ],
   "addons": [
     "heroku-postgresql:hobby-dev",
-    "heroku-redis:premium-0",
+    "heroku-redis:hobby-dev"
+  ],
+  "addons_comment": [
     "mandrill:basic"
   ],
   "env": {
