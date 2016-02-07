@@ -9,7 +9,7 @@
   ],
   "addons": [
     "heroku-postgresql:hobby-dev",
-    "heroku-redis:hobby-dev"
+    "rediscloud:30"
   ],
   "addons_comment": [
     "mandrill:basic"
