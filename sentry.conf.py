@@ -263,3 +263,12 @@ BITBUCKET_CONSUMER_SECRET = os.environ.get('BITBUCKET_CONSUMER_SECRET')
 # If this file ever becomes compromised, it's important to regenerate your SECRET_KEY
 # Changing this value will result in all current sessions being invalidated
 SECRET_KEY = os.environ['SECRET_KEY']
+
+# Hosts
+
+ALLOWED_HOSTS = [
+    '%s.herokuapp.com' % os.environ.get('HEROKU_APP_NAME'),
+]
+
+if os.environ.get('CUSTOM_DOMAIN'):
+    ALLOWED_HOSTS.append(os.environ.get('CUSTOM_DOMAIN'))
