@@ -4,6 +4,8 @@
 #
 #    pip-compile requirements.in
 #
+-e git+https://github.com/getsentry/sentry-slack@master#egg=sentry-slack
+
 amqp==1.4.9               # via kombu
 anyjson==0.3.3            # via kombu
 beautifulsoup==3.2.1      # via sentry
@@ -65,14 +67,11 @@ raven==5.10.0             # via sentry
 rb==1.3.1                 # via sentry
 redis==2.10.5             # via rb, sentry
 requests==2.7.0           # via sentry
-sentry-flowdock==0.1.1
-sentry-github==0.1.2
-sentry-slack==0.5.0
 sentry==8.0.1
 setproctitle==1.1.9       # via sentry
 simplejson==3.8.1         # via sentry
 six==1.10.0               # via cryptography, django-bitfield, pyopenssl, python-dateutil, python-memcached, sentry
-South==1.0.1
+South==1.0.1              # via sentry
 sqlparse==0.1.18          # via django-debug-toolbar
 statsd==3.1               # via sentry
 toronado==0.0.7           # via sentry
@@ -82,4 +81,4 @@ uwsgi==2.0.12
 
 # The following packages are commented out because they are
 # considered to be unsafe in a requirements file:
-# setuptools==19.4          # via cryptography
+# setuptools                # via cryptography
