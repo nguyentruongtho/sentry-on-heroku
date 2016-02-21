@@ -184,7 +184,7 @@ MIDDLEWARE_CLASSES += ('djangosecure.middleware.SecurityMiddleware',)
 
 # If you're using a reverse proxy, you should enable the X-Forwarded-Proto
 # header and uncomment the following settings
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'http')
 
 # Whether to use HTTPOnly flag on the session cookie. If this is set to `True`,
 # client-side JavaScript will not to be able to access the session cookie.
